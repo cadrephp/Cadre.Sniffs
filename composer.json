@@ -1,0 +1,32 @@
+{
+    "name": "cadre/sniffs",
+    "type": "library",
+    "require": {
+    },
+    "require-dev": {
+        "pds/skeleton": "1.x-dev",
+        "phing/phing": "^2.15",
+        "phpunit/phpunit": "^6.0",
+        "squizlabs/php_codesniffer": "^3.0@RC",
+        "phpstan/phpstan": "^0.6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cadre\\Sniffs\\": "src/Sniffs/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cadre\\Sniffs\\": "tests/Sniffs/",
+            "PHP_CodeSniffer\\": "vendor/squizlabs/php_codesniffer/src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Shell",
+            "email": "andrew@andrewshell.org"
+        }
+    ],
+    "minimum-stability": "stable"
+}
